@@ -5,6 +5,7 @@
 
 
 
+
 void init(char board[][ROWS])
 {
 	int i = 0;
