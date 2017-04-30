@@ -1,6 +1,7 @@
 
 #include"game.h"
 
+
 void init(char board[][ROWS])
 {
 	int i = 0;
@@ -34,7 +35,7 @@ void p_game(char board[][ROWS])
 	int row = 0;
 	do
 	{
-		printf("Íæ¼Ò·ÅÖÃÆå×Ó£º");
+		printf("ç©å®¶æ”¾ç½®æ£‹å­ï¼š");
 		scanf("%d %d", &line, &row);
 
 	} while ((line >LINE) || (row > ROWS) || (board[line-1][row-1] != ' '));
@@ -47,7 +48,7 @@ void npc_game(char board[][ROWS])
 {
 	int line = 0;
 	int row = 0;
-	printf("NPC·ÅÖÃÆå×Ó:\n");
+	printf("NPCæ”¾ç½®æ£‹å­:\n");
 	srand((unsigned)time(NULL));
 	do
 	{
@@ -60,7 +61,7 @@ void npc_game(char board[][ROWS])
 char check_win(char board[][ROWS])
 {
 	int i = 0;
-	// ÅĞ¶ÏºáĞĞ
+	// åˆ¤æ–­æ¨ªè¡Œ
 	for (i = 0; i < LINE ; i++)
 	{
 		if ((board[i][0] == board[i][1])
@@ -68,7 +69,7 @@ char check_win(char board[][ROWS])
 			&& (board[i][0] != ' '))
 			return board[i][0];
 	}
-	// ÅĞ¶Ï ÊúÁĞ
+	// åˆ¤æ–­ ç«–åˆ—
 	for (i = 0; i <ROWS; i++)
 	{
 		if ((board[0][i] == board[1][i])
@@ -76,7 +77,7 @@ char check_win(char board[][ROWS])
 			&& (board[0][i] != ' '))
 			return board[0][i];
 	}
-	// ÅĞ¶ÏĞ± 
+	// åˆ¤æ–­æ–œ 
 	{
 		if ((board[0][0] == board[1][1])
 			&& (board[1][1] == board[2][2])
@@ -87,10 +88,10 @@ char check_win(char board[][ROWS])
 			&& (board[0][2] != ' '))
 			return board[0][2];
 	}
-	 // ÅĞ¶Ï Æ½¾Ö
+	 // åˆ¤æ–­ å¹³å±€
 	if (check_full(board) == 1)
 		return 'P';
-	return 'Q';  // Ã»ÓĞÏÂÍê
+	return 'Q';  // æ²¡æœ‰ä¸‹å®Œ
 
 }
 
@@ -105,8 +106,8 @@ int check_full(char board[][ROWS])
 			if (board[i][j] != ' ')
 				;
 			else
-				return 0; // ÆåÅÌÎ´Âú
+				return 0; // æ£‹ç›˜æœªæ»¡
 		}
 	}
-	return 1; //  ÆåÅÌÂú
+	return 1; //  æ£‹ç›˜æ»¡
 }
