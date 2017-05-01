@@ -1,10 +1,10 @@
 
 
-// Ô¤´¦Àí¿é
-#ifndef __GAME_H__    // ·ÀÖ¹ÖØ¸´game.h±»ÖØ¸´ÒıÓÃ
+// é¢„å¤„ç†å—
+#ifndef __GAME_H__    // é˜²æ­¢é‡å¤game.hè¢«é‡å¤å¼•ç”¨
 #define __GAME_H__
-#define  LINE 3   // ĞĞµÄ´óĞ¡
-#define  ROWS 3   // ÁĞµÄ´óĞ¡
+#define  LINE 3   // è¡Œçš„å¤§å°
+#define  ROWS 3   // åˆ—çš„å¤§å°
 #define _CRT_SECURE_NO_WARNINGS 1 
 #include<stdio.h>
 #include<stdlib.h>
