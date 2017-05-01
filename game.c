@@ -13,6 +13,7 @@ void init(char board[][ROWS])
 		}
 	}
 }
+
 void print_board(char board[][ROWS])
 {
 	int i = 0;
