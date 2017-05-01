@@ -29,6 +29,7 @@ void print_board(char board[][ROWS])
 		printf("\n -------------- \n");
 	}
 }
+
 void p_game(char board[][ROWS])
 {
 	int line = 0;
