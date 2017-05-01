@@ -113,3 +113,4 @@ int check_full(char board[][ROWS])
 	}
 	return 1; //  棋盘满
 }
+
