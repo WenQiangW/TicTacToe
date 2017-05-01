@@ -1,5 +1,4 @@
 
-
 // 预处理块
 #ifndef __GAME_H__    // 防止重复game.h被重复引用
 #define __GAME_H__
