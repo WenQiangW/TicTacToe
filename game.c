@@ -2,7 +2,6 @@
 #include"game.h"
 
 
-
 void init(char board[][ROWS])
 {
 	int i = 0;
