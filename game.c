@@ -59,6 +59,7 @@ void npc_game(char board[][ROWS])
 	board[line][row] = 'O';
 	print_board(board);
 }
+
 char check_win(char board[][ROWS])
 {
 	int i = 0;
