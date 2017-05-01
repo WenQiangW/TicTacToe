@@ -1,12 +1,11 @@
 
-
 #include"game.h"
 
 void menu()
 {
-	printf("**********µ¥»ú°æ Èı×ÓÆå*************\n");
-	printf("********** 1 ¿ªÊ¼ÓÎÏ·  *************\n");
-	printf("********** 0 ÍË³öÓÎÏ·   ************\n");
+	printf("**********å•æœºç‰ˆ ä¸‰å­æ£‹*************\n");
+	printf("********** 1 å¼€å§‹æ¸¸æˆ  *************\n");
+	printf("********** 0 é€€å‡ºæ¸¸æˆ   ************\n");
 	printf("************************************\n");
 }
 enum op
@@ -29,11 +28,11 @@ void start_game(char board[][ROWS])
 		result = check_win(board);
 	} while (result == 'Q');
 	if (result == 'X')
-		printf("Íæ¼ÒÓ®ÁË\n");
+		printf("ç©å®¶èµ¢äº†\n");
 	else if (result == 'O')
-		printf("µçÄÔÓ®ÁË\n");
+		printf("ç”µè„‘èµ¢äº†\n");
 	else if (result == 'P')
-		printf("Æ½¾Ö\n");
+		printf("å¹³å±€\n");
 }
 int main()
 {
@@ -42,7 +41,7 @@ int main()
 	do
 	{
 		menu();
-		printf("ÇëÊäÈëÑ¡Ôñ£º");
+		printf("è¯·è¾“å…¥é€‰æ‹©ï¼š");
 		scanf("%d", &input);
 		switch (input)
 		{
@@ -52,7 +51,7 @@ int main()
 		case EXIT:
 			break;
 		default:
-			printf("ÊäÈë´íÎó!!!\n");
+			printf("è¾“å…¥é”™è¯¯!!!\n");
 			break;
 		}
 	} while (input);
